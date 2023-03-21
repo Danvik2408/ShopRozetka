@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+.card{
+    width: 250px;
+    height: 380px;
+    box-shadow: 0 0 10px #999;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 200px;
+    border-radius: 10px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.bColor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.buyBtn{
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: .5s;
+}
+.buyBtn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: .3s;
+}
+.cardName{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.sm{
+    font-size: 12px;
+}
+
+.discount{
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+    color: green;
+}
+
+.cartContainer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    padding: 0 50px;
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart i{
+    cursor: pointer;
+}
+.counter{
+    font-size: 12px;
+    position: relative;
+    top: -20px;
+    background-color: red;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.buyList{
+    width: 500px;
+    min-height: 100%;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px #000;
+    position: absolute;
+    z-index: 2;
+    margin-left: 67%;
+    top: 10%;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.goods{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid #000;
+    display: none;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+}
+.goods img{
+    width: 98px;
+}
+.content{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.contentText{
+    height: 70px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contentText div{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBtn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.detail{
+    width: 100px;
+    height: 100%;
+    background-color: #999;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.deleate{
+    width: 100px;
+    height: 100%;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.logoContainer img{
+    width: 50px;
+    height: 50px;
+}
+.logoContainer{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoText{
+    color: #fff;
+    font-size: 18px;
+}
+.menuContainer{
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menuContainer button{
+    width: 100px;
+    height: 50%;
+    background-color: rgb(14, 121, 14);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+.Katalog{
+    cursor: pointer;
+}
+.KatalogMenu{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #333;
+    background-color: #fff;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 4;
+    box-shadow: 0 0 20px #000;
+    position: fixed;
+    display: none;
+}
+.shadow{
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 1000vh;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+.KatalogMenu button{
+    width: 100%;
+    height: 100px;
+    background-color: #999;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+}
